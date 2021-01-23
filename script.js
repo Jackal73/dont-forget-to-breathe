@@ -8,14 +8,14 @@ const holdTime = totalTime / 5
 breathingAnimation()
 
 function breathingAnimation () {
-    text.innerHTML = 'Inhale through nose'
+    text.innerHTML = 'Inhale'
     container.className = 'container expand'
 
     setTimeout(() => {
         text.innerText = 'Hold...'
 
         setTimeout(() => {
-            text.innerText = 'Exhale through mouth'
+            text.innerText = 'Exhale'
             container.className = 'container shrink'
         }, holdTime)
     }, breatheInOut)
